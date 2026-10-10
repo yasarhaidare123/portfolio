@@ -1,1897 +1,397 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- =====================================================
-         BASIC META
-    ====================================================== -->
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Muhammad Yasar - Full Stack Web Developer specializing in modern websites, web applications and professional web design."
-    >
-
-    <meta
-        name="keywords"
-        content="Muhammad Yasar, Full Stack Developer, Web Developer, Web Designer, Web Application Developer, Portfolio"
-    >
-
-    <meta
-        name="author"
-        content="Muhammad Yasar"
-    >
+    <title>Muhammad Yasar | Full Stack Web Developer</title>
+    <meta name="description" content="Muhammad Yasar is a Full Stack Web Developer specializing in modern websites, web applications, and professional web design.">
 
     <meta name="theme-color" content="#020617">
 
-    <title>
-        Muhammad Yasar | Full Stack Web Developer
-    </title>
-
-
-    <!-- =====================================================
-         GOOGLE FONT
-    ====================================================== -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
-
-    <!-- =====================================================
-         ICONS
-    ====================================================== -->
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
-
-
-    <!-- =====================================================
-         CSS
-    ====================================================== -->
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-    <!-- =====================================================
-         NAVBAR
-    ====================================================== -->
+    <!-- Background -->
+    <div class="background-glow glow-left"></div>
+    <div class="background-glow glow-right"></div>
 
+    <!-- Navbar -->
     <header class="navbar">
+        <a href="#home" class="logo">Yasar<span>.</span></a>
 
-        <div class="container nav-container">
-
-            <!-- Logo -->
-
-            <a
-                href="#home"
-                class="logo"
-            >
-                <span class="logo-symbol">&lt;</span>
-                Yasar
-                <span class="logo-symbol">/&gt;</span>
-            </a>
-
-
-            <!-- Mobile Menu Button -->
-
-            <button
-                class="menu-toggle"
-                aria-label="Open navigation menu"
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
                 aria-expanded="false"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-
-            <!-- Navigation -->
-
-            <nav class="nav-menu">
-
-                <a
-                    href="#home"
-                    class="nav-link active"
-                >
-                    Home
-                </a>
-
-                <a
-                    href="#about"
-                    class="nav-link"
-                >
-                    About
-                </a>
-
-                <a
-                    href="#services"
-                    class="nav-link"
-                >
-                    Services
-                </a>
-
-                <a
-                    href="#skills"
-                    class="nav-link"
-                >
-                    Skills
-                </a>
-
-                <a
-                    href="#projects"
-                    class="nav-link"
-                >
-                    Projects
-                </a>
-
-                <a
-                    href="#contact"
-                    class="nav-link"
-                >
-                    Contact
-                </a>
-
-            </nav>
-
-
-            <!-- Navbar Button -->
-
-            <a
-                href="#contact"
-                class="nav-btn"
-            >
-                Let's Talk
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="nav-contact">Let's Talk</a>
+        </nav>
     </header>
-
-
-
-    <!-- =====================================================
-         HERO SECTION
-    ====================================================== -->
 
     <main>
 
-        <section
-            id="home"
-            class="hero"
-        >
+        <!-- Hero Section -->
+        <section class="hero" id="home">
 
-            <div class="hero-background"></div>
+            <!-- Decorative rings -->
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orbit orbit-three"></div>
 
-            <div class="container hero-container">
+            <!-- Left: Code Editor -->
+            <div class="hero-content">
 
-                <!-- Hero Content -->
-
-                <div class="hero-content">
-
-                    <div class="hero-badge">
-
-                        <span class="status-dot"></span>
-
-                        Available for Freelance
-
-                    </div>
-
-
-                    <p class="hero-small-title">
-                        HELLO, I'M
-                    </p>
-
-
-                    <h1 class="hero-title">
-
-                        Muhammad
-                        <span>Yasar</span>
-
-                    </h1>
-
-
-                    <h2 class="hero-role">
-
-                        <span class="typing-text">
-                            Full Stack Developer
-                        </span>
-
-                        <span class="typing-cursor">
-                            |
-                        </span>
-
-                    </h2>
-
-
-                    <p class="hero-description">
-
-                        I build modern, responsive and
-                        high-performance websites and web
-                        applications with clean code,
-                        professional design and powerful
-                        user experiences.
-
-                    </p>
-
-
-                    <!-- Hero Buttons -->
-
-                    <div class="hero-buttons">
-
-                        <a
-                            href="#projects"
-                            class="btn btn-primary"
-                        >
-                            View My Work
-
-                            <i
-                                class="fa-solid fa-arrow-right"
-                            ></i>
-
-                        </a>
-
-
-                        <a
-                            href="#contact"
-                            class="btn btn-outline"
-                        >
-                            Contact Me
-                        </a>
-
-                    </div>
-
-
-                    <!-- Social Links -->
-
-                    <div class="hero-socials">
-
-                        <a
-                            href="#"
-                            aria-label="GitHub"
-                        >
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-
-                        <a
-                            href="#"
-                            aria-label="LinkedIn"
-                        >
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-
-                        <a
-                            href="#"
-                            aria-label="Facebook"
-                        >
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-
-                        <a
-                            href="#"
-                            aria-label="Instagram"
-                        >
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-
-                    </div>
-
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    Available for new projects
                 </div>
 
+                <h1>
+                    Muhammad <span>Yasar</span>
+                </h1>
 
-                <!-- Hero Image / Developer Card -->
+                <h2>
+                    Full Stack <span>Web Developer</span>
+                </h2>
 
-                <div class="hero-visual">
+                <p class="hero-description">
+                    I build modern, responsive and user-friendly websites
+                    and web applications that turn ideas into reality.
+                </p>
 
-                    <div class="hero-circle"></div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        Hire Me <span>↗</span>
+                    </a>
 
-                    <div class="hero-image-wrapper">
+                    <a href="#projects" class="btn btn-outline">
+                        View Projects
+                    </a>
+                </div>
 
-                        <div class="developer-card">
+                <div class="editor-card">
 
-                            <div class="code-window">
-
-                                <div class="window-header">
-
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-
-                                </div>
-
-
-                                <div class="code-content">
-
-                                    <p>
-                                        <span class="code-purple">
-                                            const
-                                        </span>
-
-                                        developer =
-                                        {
-
-                                    </p>
-
-                                    <p class="code-indent">
-
-                                        name:
-
-                                        <span class="code-green">
-                                            "Muhammad Yasar"
-                                        </span>,
-
-                                    </p>
-
-                                    <p class="code-indent">
-
-                                        role:
-
-                                        <span class="code-green">
-                                            "Full Stack Developer"
-                                        </span>,
-
-                                    </p>
-
-                                    <p class="code-indent">
-
-                                        experience:
-
-                                        <span class="code-number">
-                                            3
-                                        </span>
-
-                                        years,
-
-                                    </p>
-
-                                    <p class="code-indent">
-
-                                        passion:
-
-                                        <span class="code-green">
-                                            "Building for Web"
-                                        </span>
-
-                                    </p>
-
-                                    <p>
-                                        };
-                                    </p>
-
-                                </div>
-
-                            </div>
-
+                    <div class="editor-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
                         </div>
 
+                        <span class="editor-title">developer.js</span>
+                        <span class="editor-language">JS</span>
                     </div>
 
-
-                    <!-- Floating Cards -->
-
-                    <div class="floating-card card-one">
-
-                        <i class="fa-solid fa-code"></i>
-
-                        <div>
-
-                            <strong>
-                                3+
-                            </strong>
-
-                            <small>
-                                Years Experience
-                            </small>
-
+                    <div class="editor-body">
+                        <div class="code-line">
+                            <span class="line-number">1</span>
+                            <code><span class="purple">const</span> developer = {</code>
                         </div>
 
+                        <div class="code-line">
+                            <span class="line-number">2</span>
+                            <code>&nbsp;&nbsp;name: <span class="green">"Muhammad Yasar"</span>,</code>
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">3</span>
+                            <code>&nbsp;&nbsp;role: <span class="green">"Full Stack Developer"</span>,</code>
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">4</span>
+                            <code>&nbsp;&nbsp;experience: <span class="orange">3</span> <span class="muted">// years</span>,</code>
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">5</span>
+                            <code>&nbsp;&nbsp;passion: <span class="green">"Building for Web"</span></code>
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">6</span>
+                            <code>};</code>
+                        </div>
+
+                        <div class="code-line comment-line">
+                            <span class="line-number">7</span>
+                            <code><span class="muted">// Let's build something amazing!</span></code>
+                        </div>
                     </div>
 
-
-                    <div class="floating-card card-two">
-
-                        <i class="fa-solid fa-laptop-code"></i>
-
-                        <div>
-
-                            <strong>
-                                50+
-                            </strong>
-
-                            <small>
-                                Projects
-                            </small>
-
-                        </div>
-
+                    <div class="editor-footer">
+                        <span><span class="status-dot"></span> Ready to build</span>
+                        <span>UTF-8 &nbsp; JavaScript</span>
                     </div>
 
                 </div>
 
             </div>
 
+            <!-- Right: Profile Image -->
+            <div class="hero-visual">
 
-            <!-- Scroll Down -->
+                <div class="portrait-orbit orbit-a"></div>
+                <div class="portrait-orbit orbit-b"></div>
 
-            <a
-                href="#about"
-                class="scroll-down"
-            >
+                <div class="portrait-wrapper">
 
-                <span>
-                    Scroll Down
-                </span>
+                    <div class="portrait-ring"></div>
 
-                <i class="fa-solid fa-arrow-down"></i>
-
-            </a>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             ABOUT SECTION
-        ====================================================== -->
-
-        <section
-            id="about"
-            class="about section"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span class="section-label">
-                        ABOUT ME
-                    </span>
-
-                    <h2>
-                        Turning Ideas Into
-                        <span>Digital Experiences</span>
-                    </h2>
-
-                    <p>
-                        I create modern digital solutions
-                        that combine beautiful design with
-                        powerful technology.
-                    </p>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <!-- About Visual -->
-
-                    <div class="about-image">
-
-                        <div class="about-card">
-
-                            <div class="about-card-top">
-
-                                <span>
-                                    &lt;/&gt;
-                                </span>
-
-                            </div>
-
-                            <h3>
-                                Muhammad Yasar
-                            </h3>
-
-                            <p>
-                                Full Stack Web Developer
-                            </p>
-
-
-                            <div class="about-stats">
-
-                                <div>
-
-                                    <strong>
-                                        3+
-                                    </strong>
-
-                                    <span>
-                                        Years
-                                    </span>
-
-                                </div>
-
-
-                                <div>
-
-                                    <strong>
-                                        50+
-                                    </strong>
-
-                                    <span>
-                                        Projects
-                                    </span>
-
-                                </div>
-
-
-                                <div>
-
-                                    <strong>
-                                        100%
-                                    </strong>
-
-                                    <span>
-                                        Dedication
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- About Content -->
-
-                    <div class="about-content">
-
-                        <span class="about-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Professional Full Stack
-                            Web Developer
-                        </h3>
-
-
-                        <p>
-
-                            I'm Muhammad Yasar, a passionate
-                            Full Stack Web Developer with
-                            around 3 years of professional
-                            experience in web development
-                            and design.
-
-                        </p>
-
-
-                        <p>
-
-                            I specialize in creating responsive
-                            websites, modern web applications
-                            and complete full-stack solutions
-                            focused on performance,
-                            usability and clean design.
-
-                        </p>
-
-
-                        <div class="about-list">
-
-                            <div>
-
-                                <i class="fa-solid fa-check"></i>
-
-                                Responsive Web Development
-
-                            </div>
-
-
-                            <div>
-
-                                <i class="fa-solid fa-check"></i>
-
-                                Modern UI/UX Design
-
-                            </div>
-
-
-                            <div>
-
-                                <i class="fa-solid fa-check"></i>
-
-                                Full Stack Applications
-
-                            </div>
-
-
-                            <div>
-
-                                <i class="fa-solid fa-check"></i>
-
-                                Clean & Scalable Code
-
-                            </div>
-
-                        </div>
-
-
-                        <a
-                            href="#contact"
-                            class="btn btn-primary"
+                    <div class="portrait">
+                        <img
+                            src="yasar.png"
+                            alt="Muhammad Yasar - Full Stack Web Developer"
+                            fetchpriority="high"
                         >
-                            Hire Me
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
                     </div>
 
+                    <div class="portrait-shine"></div>
                 </div>
 
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             SERVICES SECTION
-        ====================================================== -->
-
-        <section
-            id="services"
-            class="services section"
-        >
-
-            <div class="container">
-
-                <div class="section-heading center">
-
-                    <span class="section-label">
-                        MY SERVICES
-                    </span>
-
-                    <h2>
-                        What I Can
-                        <span>Do For You</span>
-                    </h2>
-
-                    <p>
-                        Professional digital solutions
-                        designed to help your business grow.
-                    </p>
-
-                </div>
-
-
-                <div class="services-grid">
-
-
-                    <!-- Service 1 -->
-
-                    <article class="service-card">
-
-                        <div class="service-icon">
-
-                            <i class="fa-solid fa-code"></i>
-
-                        </div>
-
-                        <span class="service-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Web Development
-                        </h3>
-
-                        <p>
-
-                            Modern, responsive and
-                            high-performance websites
-                            built with clean and scalable
-                            code.
-
-                        </p>
-
-                        <a href="#contact">
-                            Learn More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                    </article>
-
-
-                    <!-- Service 2 -->
-
-                    <article class="service-card">
-
-                        <div class="service-icon">
-
-                            <i class="fa-solid fa-palette"></i>
-
-                        </div>
-
-                        <span class="service-number">
-                            02
-                        </span>
-
-                        <h3>
-                            Web Design
-                        </h3>
-
-                        <p>
-
-                            Clean and modern UI designs
-                            focused on usability,
-                            aesthetics and user experience.
-
-                        </p>
-
-                        <a href="#contact">
-                            Learn More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                    </article>
-
-
-                    <!-- Service 3 -->
-
-                    <article class="service-card">
-
-                        <div class="service-icon">
-
-                            <i class="fa-solid fa-window-maximize"></i>
-
-                        </div>
-
-                        <span class="service-number">
-                            03
-                        </span>
-
-                        <h3>
-                            Web Applications
-                        </h3>
-
-                        <p>
-
-                            Powerful web applications
-                            designed to solve real-world
-                            business problems.
-
-                        </p>
-
-                        <a href="#contact">
-                            Learn More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                    </article>
-
-
-                    <!-- Service 4 -->
-
-                    <article class="service-card">
-
-                        <div class="service-icon">
-
-                            <i class="fa-solid fa-layer-group"></i>
-
-                        </div>
-
-                        <span class="service-number">
-                            04
-                        </span>
-
-                        <h3>
-                            Full Stack Development
-                        </h3>
-
-                        <p>
-
-                            Complete frontend and backend
-                            solutions with secure APIs,
-                            databases and modern architecture.
-
-                        </p>
-
-                        <a href="#contact">
-                            Learn More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             SKILLS SECTION
-        ====================================================== -->
-
-        <section
-            id="skills"
-            class="skills section"
-        >
-
-            <div class="container">
-
-                <div class="section-heading center">
-
-                    <span class="section-label">
-                        MY SKILLS
-                    </span>
-
-                    <h2>
-                        Technologies I
-                        <span>Work With</span>
-                    </h2>
-
-                    <p>
-                        Tools and technologies I use
-                        to build modern digital products.
-                    </p>
-
-                </div>
-
-
-                <div class="skills-grid">
-
-
-                    <!-- HTML -->
-
-                    <div class="skill-card">
-
-                        <div class="skill-header">
-
-                            <div class="skill-icon html">
-                                <i class="fa-brands fa-html5"></i>
-                            </div>
-
-                            <div>
-
-                                <h3>
-                                    HTML5
-                                </h3>
-
-                                <span>
-                                    Frontend
-                                </span>
-
-                            </div>
-
-                            <strong>
-                                95%
-                            </strong>
-
-                        </div>
-
-
-                        <div class="skill-bar">
-
-                            <div
-                                class="skill-progress"
-                                data-width="95"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- CSS -->
-
-                    <div class="skill-card">
-
-                        <div class="skill-header">
-
-                            <div class="skill-icon css">
-                                <i class="fa-brands fa-css3-alt"></i>
-                            </div>
-
-                            <div>
-
-                                <h3>
-                                    CSS3
-                                </h3>
-
-                                <span>
-                                    Frontend
-                                </span>
-
-                            </div>
-
-                            <strong>
-                                92%
-                            </strong>
-
-                        </div>
-
-
-                        <div class="skill-bar">
-
-                            <div
-                                class="skill-progress"
-                                data-width="92"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- JavaScript -->
-
-                    <div class="skill-card">
-
-                        <div class="skill-header">
-
-                            <div class="skill-icon js">
-                                <i class="fa-brands fa-js"></i>
-                            </div>
-
-                            <div>
-
-                                <h3>
-                                    JavaScript
-                                </h3>
-
-                                <span>
-                                    Programming
-                                </span>
-
-                            </div>
-
-                            <strong>
-                                90%
-                            </strong>
-
-                        </div>
-
-
-                        <div class="skill-bar">
-
-                            <div
-                                class="skill-progress"
-                                data-width="90"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- React -->
-
-                    <div class="skill-card">
-
-                        <div class="skill-header">
-
-                            <div class="skill-icon react">
-                                <i class="fa-brands fa-react"></i>
-                            </div>
-
-                            <div>
-
-                                <h3>
-                                    React
-                                </h3>
-
-                                <span>
-                                    Frontend
-                                </span>
-
-                            </div>
-
-                            <strong>
-                                85%
-                            </strong>
-
-                        </div>
-
-
-                        <div class="skill-bar">
-
-                            <div
-                                class="skill-progress"
-                                data-width="85"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Node -->
-
-                    <div class="skill-card">
-
-                        <div class="skill-header">
-
-                            <div class="skill-icon node">
-                                <i class="fa-brands fa-node-js"></i>
-                            </div>
-
-                            <div>
-
-                                <h3>
-                                    Node.js
-                                </h3>
-
-                                <span>
-                                    Backend
-                                </span>
-
-                            </div>
-
-                            <strong>
-                                85%
-                            </strong>
-
-                        </div>
-
-
-                        <div class="skill-bar">
-
-                            <div
-                                class="skill-progress"
-                                data-width="85"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Database -->
-
-                    <div class="skill-card">
-
-                        <div class="skill-header">
-
-                            <div class="skill-icon database">
-                                <i class="fa-solid fa-database"></i>
-                            </div>
-
-                            <div>
-
-                                <h3>
-                                    Database
-                                </h3>
-
-                                <span>
-                                    Backend
-                                </span>
-
-                            </div>
-
-                            <strong>
-                                82%
-                            </strong>
-
-                        </div>
-
-
-                        <div class="skill-bar">
-
-                            <div
-                                class="skill-progress"
-                                data-width="82"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             PROJECTS SECTION
-        ====================================================== -->
-
-        <section
-            id="projects"
-            class="projects section"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span class="section-label">
-                        MY WORK
-                    </span>
-
-                    <h2>
-                        Featured
+                <!-- Projects Card -->
+                <div class="floating-card projects-card">
+                    <div class="card-icon">&lt;/&gt;</div>
+
+                    <div>
+                        <strong>50+</strong>
                         <span>Projects</span>
-                    </h2>
-
-                    <p>
-                        Some of my recent work and
-                        development projects.
-                    </p>
-
+                    </div>
                 </div>
 
+                <!-- Experience Card -->
+                <div class="floating-card experience-card">
+                    <div class="card-icon">♙</div>
 
-                <!-- Filters -->
-
-                <div class="project-filters">
-
-                    <button
-                        class="filter-btn active"
-                        data-filter="all"
-                    >
-                        All
-                    </button>
-
-                    <button
-                        class="filter-btn"
-                        data-filter="web"
-                    >
-                        Websites
-                    </button>
-
-                    <button
-                        class="filter-btn"
-                        data-filter="app"
-                    >
-                        Applications
-                    </button>
-
-                    <button
-                        class="filter-btn"
-                        data-filter="design"
-                    >
-                        Designs
-                    </button>
-
+                    <div>
+                        <strong>3+</strong>
+                        <span>Years Experience</span>
+                    </div>
                 </div>
 
-
-                <div class="projects-grid">
-
-
-                    <!-- Project 1 -->
-
-                    <article
-                        class="project-card"
-                        data-category="web"
-                    >
-
-                        <div class="project-image">
-
-                            <div class="project-placeholder">
-
-                                <i class="fa-solid fa-globe"></i>
-
-                            </div>
-
-
-                            <div class="project-overlay">
-
-                                <a
-                                    href="#"
-                                    aria-label="View project"
-                                >
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <span>
-                                Web Development
-                            </span>
-
-                            <h3>
-                                Business Website
-                            </h3>
-
-                            <p>
-                                A modern responsive business
-                                website with professional UI
-                                and smooth interactions.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>
-                                    HTML
-                                </span>
-
-                                <span>
-                                    CSS
-                                </span>
-
-                                <span>
-                                    JavaScript
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Project 2 -->
-
-                    <article
-                        class="project-card"
-                        data-category="app"
-                    >
-
-                        <div class="project-image">
-
-                            <div class="project-placeholder">
-
-                                <i class="fa-solid fa-chart-line"></i>
-
-                            </div>
-
-
-                            <div class="project-overlay">
-
-                                <a
-                                    href="#"
-                                    aria-label="View project"
-                                >
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <span>
-                                Web Application
-                            </span>
-
-                            <h3>
-                                Dashboard Application
-                            </h3>
-
-                            <p>
-                                A powerful dashboard application
-                                designed for managing business
-                                data and analytics.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>
-                                    JavaScript
-                                </span>
-
-                                <span>
-                                    API
-                                </span>
-
-                                <span>
-                                    Database
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Project 3 -->
-
-                    <article
-                        class="project-card"
-                        data-category="design"
-                    >
-
-                        <div class="project-image">
-
-                            <div class="project-placeholder">
-
-                                <i class="fa-solid fa-palette"></i>
-
-                            </div>
-
-
-                            <div class="project-overlay">
-
-                                <a
-                                    href="#"
-                                    aria-label="View project"
-                                >
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <span>
-                                UI/UX Design
-                            </span>
-
-                            <h3>
-                                Modern Landing Page
-                            </h3>
-
-                            <p>
-                                A clean and conversion-focused
-                                landing page with modern visual
-                                design.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>
-                                    UI/UX
-                                </span>
-
-                                <span>
-                                    Figma
-                                </span>
-
-                                <span>
-                                    CSS
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Project 4 -->
-
-                    <article
-                        class="project-card"
-                        data-category="web"
-                    >
-
-                        <div class="project-image">
-
-                            <div class="project-placeholder">
-
-                                <i class="fa-solid fa-cart-shopping"></i>
-
-                            </div>
-
-
-                            <div class="project-overlay">
-
-                                <a
-                                    href="#"
-                                    aria-label="View project"
-                                >
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <span>
-                                E-Commerce
-                            </span>
-
-                            <h3>
-                                Online Store
-                            </h3>
-
-                            <p>
-                                A responsive e-commerce website
-                                with product management and
-                                modern shopping experience.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>
-                                    JavaScript
-                                </span>
-
-                                <span>
-                                    API
-                                </span>
-
-                                <span>
-                                    Backend
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
+                <!-- Dedication Card -->
+                <div class="floating-card dedication-card">
+                    <div class="card-icon">★</div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>Dedication</span>
+                    </div>
                 </div>
 
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
+                Scroll to explore
             </div>
 
         </section>
 
-
-
-        <!-- =====================================================
-             EXPERIENCE SECTION
-        ====================================================== -->
-
-        <section
-            class="experience section"
-        >
-
-            <div class="container">
-
-                <div class="section-heading center">
-
-                    <span class="section-label">
-                        EXPERIENCE
-                    </span>
-
-                    <h2>
-                        My Professional
-                        <span>Journey</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="experience-grid">
-
-                    <div class="experience-card">
-
-                        <div class="experience-icon">
-
-                            <i class="fa-solid fa-briefcase"></i>
-
-                        </div>
-
-                        <div>
-
-                            <span>
-                                2023 - Present
-                            </span>
-
-                            <h3>
-                                Full Stack Web Developer
-                            </h3>
-
-                            <p>
-
-                                Working on modern websites,
-                                web applications, frontend
-                                interfaces and backend systems.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="experience-card">
-
-                        <div class="experience-icon">
-
-                            <i class="fa-solid fa-code"></i>
-
-                        </div>
-
-                        <div>
-
-                            <span>
-                                3+ Years
-                            </span>
-
-                            <h3>
-                                Web Development Experience
-                            </h3>
-
-                            <p>
-
-                                Experience in creating
-                                responsive, scalable and
-                                user-friendly digital solutions.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+        <!-- About Section -->
+        <section class="content-section about-section" id="about">
+            <div class="about-copy">
+                <span class="section-label">ABOUT ME</span>
+                <h2>Turning Ideas Into <span>Digital Experiences</span></h2>
+                <p>
+                    I'm Muhammad Yasar, a Full Stack Web Developer focused on
+                    creating responsive websites, modern user interfaces,
+                    web applications and professional online stores.
+                    I enjoy writing clean code and building useful digital products.
+                </p>
             </div>
-
+            <div class="about-accent">
+                <span><strong>Full Name</strong> Muhammad Yasar</span>
+                <span><strong>Location</strong> Chakdara, KPK, Pakistan</span>
+                <span>Thoughtful design</span>
+                <span>Responsive development</span>
+                <span>Useful web products</span>
+            </div>
         </section>
 
-
-
-        <!-- =====================================================
-             CONTACT SECTION
-        ====================================================== -->
-
-        <section
-            id="contact"
-            class="contact section"
-        >
-
-            <div class="container">
-
-                <div class="contact-grid">
-
-
-                    <!-- Contact Information -->
-
-                    <div class="contact-info">
-
-                        <span class="section-label">
-                            GET IN TOUCH
-                        </span>
-
-                        <h2>
-                            Let's Build Something
-                            <span>Great Together.</span>
-                        </h2>
-
-                        <p>
-
-                            Have a project in mind?
-                            Let's discuss your ideas and
-                            turn them into a professional
-                            digital experience.
-
-                        </p>
-
-
-                        <div class="contact-items">
-
-
-                            <div class="contact-item">
-
-                                <div class="contact-icon">
-
-                                    <i class="fa-solid fa-envelope"></i>
-
-                                </div>
-
-                                <div>
-
-                                    <span>
-                                        Email
-                                    </span>
-
-                                    <a
-                                        href="mailto:your@email.com"
-                                    >
-                                        your@email.com
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="contact-item">
-
-                                <div class="contact-icon">
-
-                                    <i class="fa-solid fa-phone"></i>
-
-                                </div>
-
-                                <div>
-
-                                    <span>
-                                        Phone
-                                    </span>
-
-                                    <a
-                                        href="tel:+0000000000"
-                                    >
-                                        +00 000 0000000
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="contact-item">
-
-                                <div class="contact-icon">
-
-                                    <i class="fa-solid fa-location-dot"></i>
-
-                                </div>
-
-                                <div>
-
-                                    <span>
-                                        Location
-                                    </span>
-
-                                    <p>
-                                        Pakistan
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Contact Form -->
-
-                    <div class="contact-form-wrapper">
-
-                        <form
-                            id="contact-form"
-                            class="contact-form"
-                        >
-
-                            <div class="form-row">
-
-                                <div class="form-group">
-
-                                    <label for="name">
-                                        Your Name
-                                    </label>
-
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        placeholder="Enter your name"
-                                        required
-                                    >
-
-                                </div>
-
-
-                                <div class="form-group">
-
-                                    <label for="email">
-                                        Your Email
-                                    </label>
-
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        placeholder="Enter your email"
-                                        required
-                                    >
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="form-group">
-
-                                <label for="subject">
-                                    Subject
-                                </label>
-
-                                <input
-                                    type="text"
-                                    id="subject"
-                                    name="subject"
-                                    placeholder="Project subject"
-                                    required
-                                >
-
-                            </div>
-
-
-                            <div class="form-group">
-
-                                <label for="message">
-                                    Message
-                                </label>
-
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="6"
-                                    placeholder="Tell me about your project..."
-                                    required
-                                ></textarea>
-
-                            </div>
-
-
-                            <button
-                                type="submit"
-                                class="btn btn-primary"
-                            >
-
-                                Send Message
-
-                                <i
-                                    class="fa-solid fa-paper-plane"
-                                ></i>
-
-                            </button>
-
-                        </form>
-
-                    </div>
-
-                </div>
-
+        <!-- Services Section -->
+        <section class="content-section" id="services">
+            <div class="section-intro">
+                <span class="section-label">WHAT I DO</span>
+                <h2>My <span>Services</span></h2>
             </div>
 
+            <div class="service-grid">
+
+                <article class="service-card">
+                    <div class="service-icon">⌘</div>
+                    <h3>Web Development</h3>
+                    <p>Responsive and modern websites for businesses and individuals.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">✧</div>
+                    <h3>UI/UX Web Design</h3>
+                    <p>Clean, attractive and user-friendly website interfaces.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">▣</div>
+                    <h3>Web Applications</h3>
+                    <p>Interactive web applications with practical functionality.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🛒</div>
+                    <h3>E-commerce Stores</h3>
+                    <p>Professional online stores with product and shopping features.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="content-section skills" id="skills">
+            <div class="section-intro">
+                <span class="section-label">TECHNICAL SKILLS</span>
+                <h2>My <span>Technical Skills</span></h2>
+                <p>Technologies and tools I use to build modern websites and web applications.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-header"><span class="skill-icon" aria-hidden="true">01</span><h3>Frontend Development</h3></div>
+                    <ul class="skill-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Web Application Development</li><li>Web Design</li><li>Responsive Web Design</li><li>UI/UX Design</li></ul>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-header"><span class="skill-icon" aria-hidden="true">02</span><h3>Backend Development</h3></div>
+                    <ul class="skill-list"><li>Node.js</li><li>Express.js</li><li>REST APIs</li></ul>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-header"><span class="skill-icon" aria-hidden="true">03</span><h3>Database</h3></div>
+                    <ul class="skill-list"><li>MySQL</li><li>MongoDB</li></ul>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-header"><span class="skill-icon" aria-hidden="true">04</span><h3>Tools and Platforms</h3></div>
+                    <ul class="skill-list"><li>Git</li><li>GitHub</li><li>Visual Studio Code</li></ul>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-header"><span class="skill-icon" aria-hidden="true">05</span><h3>Creative Skills</h3></div>
+                    <ul class="skill-list"><li>Video Editing</li></ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="content-section" id="projects">
+            <div class="section-intro">
+                <span class="section-label">MY WORK</span>
+                <h2>Featured <span>Projects</span></h2>
+                <p>Explore my web development projects and digital experiences.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image"><div class="project-placeholder">Add project image</div></div>
+                    <div class="project-content">
+                        <span>Editable project template</span><h3>Add project title</h3>
+                        <p>Replace this text with a short description of a completed project.</p>
+                        <div class="project-tags"><span>Add technology</span><span>Add technology</span></div>
+                        <div class="project-links"><span>GitHub link pending</span><span>Live demo pending</span></div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image"><div class="project-placeholder">Add project image</div></div>
+                    <div class="project-content">
+                        <span>Editable project template</span><h3>Add project title</h3>
+                        <p>Replace this text with a short description of a completed project.</p>
+                        <div class="project-tags"><span>Add technology</span><span>Add technology</span></div>
+                        <div class="project-links"><span>GitHub link pending</span><span>Live demo pending</span></div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image"><div class="project-placeholder">Add project image</div></div>
+                    <div class="project-content">
+                        <span>Editable project template</span><h3>Add project title</h3>
+                        <p>Replace this text with a short description of a completed project.</p>
+                        <div class="project-tags"><span>Add technology</span><span>Add technology</span></div>
+                        <div class="project-links"><span>GitHub link pending</span><span>Live demo pending</span></div>
+                    </div>
+                </article>
+            </div>
+
+            <a href="#contact" class="btn btn-primary project-cta">
+                Discuss Your Project ↗
+            </a>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="content-section contact" id="contact">
+            <span class="section-label">GET IN TOUCH</span>
+            <h2>Let's Build Something <span>Amazing</span></h2>
+
+            <p>
+                Have an idea or a project in mind? Let's talk about it.
+            </p>
+
+            <div class="contact-methods">
+                <span><strong>Email</strong> your-email@example.com</span>
+                <span><strong>Phone</strong> Add preferred phone number</span>
+                <span><strong>Social</strong> Add social profile links</span>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" autocomplete="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Validate Message</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <a href="mailto:your-email@example.com" class="btn btn-primary">
+                Email Me ↗
+            </a>
         </section>
 
     </main>
 
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
     <footer class="footer">
-
-        <div class="container footer-container">
-
-
-            <div class="footer-brand">
-
-                <a
-                    href="#home"
-                    class="logo"
-                >
-
-                    <span class="logo-symbol">
-                        &lt;
-                    </span>
-
-                    Yasar
-
-                    <span class="logo-symbol">
-                        /&gt;
-                    </span>
-
-                </a>
-
-                <p>
-                    Full Stack Web Developer
-                    building modern digital experiences.
-                </p>
-
-            </div>
-
-
-            <div class="footer-socials">
-
-                <a
-                    href="#"
-                    aria-label="GitHub"
-                >
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a
-                    href="#"
-                    aria-label="LinkedIn"
-                >
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-
-                <a
-                    href="#"
-                    aria-label="Facebook"
-                >
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-
-                <a
-                    href="#"
-                    aria-label="Instagram"
-                >
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-            </div>
-
-
-            <div class="footer-bottom">
-
-                <p>
-
-                    ©
-                    <span id="current-year">
-                        2026
-                    </span>
-
-                    Muhammad Yasar.
-                    All Rights Reserved.
-
-                </p>
-
-
-                <a href="#home">
-
-                    Back to Top
-
-                    <i class="fa-solid fa-arrow-up"></i>
-
-                </a>
-
-            </div>
-
-        </div>
-
+        <a href="#home" class="logo">Yasar<span>.</span></a>
+        <p>© <span id="year"></span> Muhammad Yasar. All rights reserved.</p>
     </footer>
-
-
-
-    <!-- =====================================================
-         JAVASCRIPT
-         NO PRELOADER
-         NO LOADING SCREEN
-    ====================================================== -->
 
     <script src="script.js"></script>
 
 </body>
-
 </html>

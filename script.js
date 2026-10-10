@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const navbar = document.querySelector(".navbar");
     const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-menu");
-    const navLinks = document.querySelectorAll(".nav-link");
+    const navMenu = document.querySelector("#navLinks");
+    const navLinks = document.querySelectorAll("#navLinks a");
 
 
     /* =====================================================
@@ -23,10 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (menuToggle && navMenu) {
 
+        const setMenuOpen = isOpen => {
+
+            menuToggle.classList.toggle("active", isOpen);
+            navMenu.classList.toggle("active", isOpen);
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+
+        };
+
         menuToggle.addEventListener("click", () => {
 
-            menuToggle.classList.toggle("active");
-            navMenu.classList.toggle("active");
+            setMenuOpen(menuToggle.getAttribute("aria-expanded") !== "true");
 
         });
 
@@ -35,8 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             link.addEventListener("click", () => {
 
-                menuToggle.classList.remove("active");
-                navMenu.classList.remove("active");
+                setMenuOpen(false);
 
             });
 
@@ -676,52 +682,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 event.preventDefault();
 
+                const formStatus =
+                    contactForm.querySelector("#form-status");
 
-                const submitButton =
-                    contactForm.querySelector(
-                        'button[type="submit"]'
-                    );
-
-
-                const originalText =
-                    submitButton
-                        ? submitButton.textContent
-                        : "";
-
-
-                if (submitButton) {
-
-                    submitButton.disabled =
-                        true;
-
-                    submitButton.textContent =
-                        "Sending...";
-
+                if (formStatus) {
+                    formStatus.textContent =
+                        "Your details are valid. This form is not connected to a message service yet.";
                 }
-
-
-                setTimeout(() => {
-
-                    alert(
-                        "Thank you! Your message has been received."
-                    );
-
-
-                    contactForm.reset();
-
-
-                    if (submitButton) {
-
-                        submitButton.disabled =
-                            false;
-
-                        submitButton.textContent =
-                            originalText ||
-                            "Send Message";
-
-                    }
-
-                }, 700);
 
             }
         );
@@ -785,6 +752,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     "active"
                 );
 
+                menuToggle?.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
             }
 
         }
@@ -797,7 +769,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document
         .querySelectorAll(
-            "#current-year, .current-year"
+            "#year, #current-year, .current-year"
         )
         .forEach(element => {
 
